@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/lego.3.2.css">
+
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            /*text-align: center;*/
+            /*font-size: 18px;*/
+            /*background: #fff;*/
+
+            /*!* Center slide text vertically *!*/
+            /*display: -webkit-box;*/
+            /*display: -ms-flexbox;*/
+            /*display: -webkit-flex;*/
+            /*display: flex;*/
+            /*-webkit-box-pack: center;*/
+            /*-ms-flex-pack: center;*/
+            /*-webkit-justify-content: center;*/
+            /*justify-content: center;*/
+            /*-webkit-box-align: center;*/
+            /*-ms-flex-align: center;*/
+            /*-webkit-align-items: center;*/
+            /*align-items: center;*/
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            position: fixed;
+            top: auto;
+            bottom: 0;
+            width: 50%;
+            height: 44px;
+            margin-top: -22px;
+            background-size: 27px 44px;
+        }
+
+        .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+            left: 0;
+        }
+
+        .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+            right: 0;
+        }
+        .popup-bottom .lo-popup__modal,
+        .swiper-container {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+
+        <!--  1. 积分落户资格条件  -->
+        <div class="swiper-slide stop-swiping">
+
+
+            <div class="lo-fxcs lo-g lo-h72 lo-f20">
+                积分落户资格条件
+            </div>
+
+            <!--<div class="lo-g lo-f15">-->
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--<a href="javascript:;" class="lo-fxcs lo-h88 lo-g lo-b5 lo-br8 open-popup" data-target="#page-01">-->
+                        <!--<div class="lo-fx8">持有本市居住证</div>-->
+                        <!--<div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>-->
+                <!--</a>-->
+                <!--<div class="lo-h12"></div>-->
+
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--<a href="javascript:;" class="lo-fxcs lo-h88 lo-g lo-b5 lo-br8 open-popup" data-target="#page-01">-->
+                    <!--<div class="lo-fx8">不超过法定退休年龄</div>-->
+                    <!--<div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>-->
+                <!--</a>-->
+                <!--<div class="lo-h12"></div>-->
+
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--<a href="javascript:;" class="lo-fxcs lo-h88 lo-g lo-b5 lo-br8 open-popup" data-target="#page-01">-->
+                    <!--<div class="lo-fx8">在京连续缴纳社会保险7年及以上</div>-->
+                    <!--<div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>-->
+                <!--</a>-->
+                <!--<div class="lo-h12"></div>-->
+
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--<a href="javascript:;" class="lo-fxcs lo-h88 lo-g lo-b5 lo-br8 open-popup" data-target="#page-01">-->
+                    <!--<div class="lo-fx8">无刑事犯罪记录</div>-->
+                    <!--<div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>-->
+                <!--</a>-->
+
+            <!--</div>-->
+        </div>
+
+
+        <!--  2. 合法稳定就业（1/9）  -->
+        <div class="swiper-slide stop-swiping">
+
+            <div class="lo-fxcs lo-g lo-h72 lo-f20">
+                合法稳定就业（1/9）
+            </div>
+            <div class="lo-g">
+                <div class=>
+                    <div class="lo-h16"></div>
+                    <div class="lo-fxai lo-h52 lo-c6">在京连续缴纳社会保险年限（累计月数）</div>
+                    <div class="lo-h16"></div>
+                    <div class="lo-input lo-fx lo-b5">
+                        <input class="lofxcc lo-h52 lo-fx6 lo-g" name="#" type="tel" placeholder="请输入连续缴纳社会保险月数">
+                        <div class="lo-fxcs lo-fx4 lo-c3">月</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  3. 合法稳定住所（2/9）-->
+        <div class="swiper-slide stop-swiping">
+            <ul class="lo-radio-l lo-list">
+                <li>
+                    <input type="checkbox" value="hfgdzs01" name="hfgdzs" id="hfgdzs01">
+                    <label class="lo-fxai lo-h60 lo-g lo-b5" for="hfgdzs01">
+                        <span class="lo-gr">在自有产权住所连续居住月数</span>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" value="hfgdzs02" name="hfgdzs" id="hfgdzs02">
+                    <label class="lo-fxai lo-h60 lo-g lo-b5" for="hfgdzs02">
+                        <span class="lo`-gr">在合法租赁住所连续居住月数</span>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" value="hfgdzs03" name="hfgdzs" id="hfgdzs03">
+                    <label class="lo-fxai lo-h60 lo-g lo-b5" for="hfgdzs03">
+                        <span class="lo-gr">在单位宿舍连续居住月数</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--4. 教育背景（3/9）-->
+        <div class="swiper-slide stop-swiping">
+            <ul class="lo-radio-l lo-list lo-b5">
+
+                <li>
+                    <input type="radio" value="jybj" name="jybj" id="jybj01">
+                    <label class="lo-fxcs lo-h52 lo-g" for="jybj01">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">不满足教育背景积分条件</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="jybj" name="jybj" id="jybj02">
+                    <label class="lo-fxcs lo-h52 lo-g" for="jybj02">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">大学专科(含高职)</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="jybj" name="jybj" id="jybj03">
+                    <label class="lo-fxcs lo-h52 lo-g" for="jybj03">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">大学本科学历并取得学士学位</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="jybj" name="jybj" id="jybj04">
+                    <label class="lo-fxcs lo-h52 lo-g" for="jybj04">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">研究生学历并取得硕士学位</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="jybj" name="jybj" id="jybj05">
+                    <label class="lo-fxcs lo-h52 lo-g" for="jybj05">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">研究生学历并取得博士学位</span>
+                        </span>
+                    </label>
+                </li>
+                <li>取得学历(学位)期间在京连续缴纳社会保险年限（累计月数）</li>
+            </ul>
+        </div>
+
+
+        <!--5. 职住区域（4/9）-->
+        <div class="swiper-slide stop-swiping">
+
+            <ul class="lo-radio-l lo-list lo-b5">
+
+                <li>
+                    <input type="radio" value="zzqy" name="zzqy" id="zzqy01">
+                    <label class="lo-fxcs lo-h52 lo-g" for="zzqy01">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">不满足相关职住区域积分条件</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="zzqy" name="zzqy" id="zzqy02">
+                    <label class="lo-fxcs lo-h52 lo-g" for="zzqy02">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">居住地由城六区转移到本市其他行政区</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="zzqy" name="zzqy" id="zzqy03">
+                    <label class="lo-fxcs lo-h52 lo-g" for="zzqy03">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">就业地和居住地均由城六区转移到本市其他行政区</span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--  6. 创新创业-->
+        <div class="swiper-slide stop-swiping">
+            <ul class="lo-radio-l lo-list lo-b5">
+
+                <li>
+                    <input type="radio" value="cxcy" name="cxcy" id="cxcy01">
+                    <label class="lo-fxcs lo-h52 lo-g" for="cxcy01">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">不满足创新创业积分条件</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="cxcy" name="cxcy" id="cxcy02">
+                    <label class="lo-fxcs lo-h52 lo-g" for="cxcy02">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">在科技、文化领域获得国家级或本市市级奖项</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="cxcy" name="cxcy" id="cxcy03">
+                    <label class="lo-fxcs lo-h52 lo-g" for="cxcy03">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">在创新创业大赛获得国家级或本市市级奖项</span>
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" value="cxcy" name="cxcy" id="cxcy04">
+                    <label class="lo-fxcs lo-h52 lo-g" for="cxcy04">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">在国家高新技术企业担任高级管理人员、核心技术人员且符合相关条件</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="cxcy" name="cxcy" id="cxcy05">
+                    <label class="lo-fxcs lo-h52 lo-g" for="cxcy05">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">在经认定的科技企业孵化器及众创空间中符合一定条件的创业企业投资或就业且符合相关条件</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="cxcy" name="cxcy" id="cxcy06">
+                    <label class="lo-fxcs lo-h52 lo-g" for="cxcy06">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">在经认定的科技企业孵化器及众创空间、技术转移服务机构、专业科技服务机构投资或就业且符合相关条件</span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--  7. 纳税-->
+        <div class="swiper-slide stop-swiping">
+
+            <ul class="lo-radio-l lo-list lo-b5">
+
+                <li>
+                    <input type="radio" value="ns" name="ns" id="ns01">
+                    <label class="lo-fxcs lo-h52 lo-g" for="ns01">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">不满足相关纳税积分条件</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="ns" name="ns" id="ns02">
+                    <label class="lo-fxcs lo-h52 lo-g" for="ns02">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">平均每年个人所得税纳税额在10万元及以上</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="ns" name="ns" id="ns03">
+                    <label class="lo-fxcs lo-h52 lo-g" for="ns03">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">出资企业纳税额按其出资比例计算，平均每年纳税20万元及以上</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="ns" name="ns" id="ns04">
+                    <label class="lo-fxcs lo-h52 lo-g" for="ns04">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">自《北京市积分落户管理办法（试行）》施行之日起，涉税违法行为记录次数</span>
+                        </span>
+                    </label>
+                </li>
+                <li>自《北京市积分落户管理办法（试行）》施行之日起，涉税违法行为记录次数</li>
+            </ul>
+
+
+        </div>
+
+
+        <!--  8. 年龄-->
+        <div class="swiper-slide stop-swiping">
+            <ul class="lo-radio-l lo-list lo-b5">
+                <li>
+                    <input type="radio" value="nl" name="nl" id="nl01">
+                    <label class="lo-fxcs lo-h52 lo-g" for="nl01">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">45周岁及以下</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="nl" name="nl" id="nl02">
+                    <label class="lo-fxcs lo-h52 lo-g" for="nl02">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">45周岁以上</span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--  9. 荣誉表彰-->
+        <div class="swiper-slide stop-swiping">
+            <ul class="lo-radio-l lo-list lo-b5">
+
+                <li>
+                    <input type="radio" value="rybz" name="rybz" id="rybz01">
+                    <label class="lo-fxcs lo-h52 lo-g" for="rybz01">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">不符合荣誉表彰积分条件</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="rybz" name="rybz" id="rybz02">
+                    <label class="lo-fxcs lo-h52 lo-g" for="rybz02">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">省部级以上劳动模范</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="rybz" name="rybz" id="rybz03">
+                    <label class="lo-fxcs lo-h52 lo-g" for="rybz03">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">全国道德模范或首都道德模范</span>
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" value="rybz" name="rybz" id="rybz04">
+                    <label class="lo-fxcs lo-h52 lo-g" for="rybz04">
+                        <span class="lo-fxai lo-fx1">
+                            <span class="lo-gr">全国见义勇为英雄模范或首都见义勇为好市民</span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--  10. 守法记录-->
+        <div class="swiper-slide stop-swiping">
+            <div>行政拘留处罚次数</div>
+            <div></div>
+        </div>
+
+
+        <!--  11. 模拟积分结果-->
+        <div class="swiper-slide stop-swiping">
+            <div>总分合计：<span></span>分</div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+
+<!---------  弹出层 - 显示底部的Popup  --------->
+
+    <!--  page-01  -->
+    <!--<div id="page-01" class='lo-popup__container popup-bottom'>-->
+        <!--<div class="lo-popup__overlay"></div>-->
+        <!--<div class="lo-popup__modal lo-b6">-->
+            <!--<div class="modal-content">-->
+                    <!--<a href="javascript:;" class="lo-fxcc lo-h60 lo-b5 close-popup">是</a>-->
+                    <!--<a href="javascript:;" class="lo-fxcc lo-h60 lo-b5 lo-hr0 close-popup">否</a>-->
+                    <!--<div class="lo-h16"></div>-->
+                    <!--<a href="javascript:;" class="lo-fxcc lo-h60 lo-b5 close-popup">取消</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <!--  page-02  -->
+    <!--<div id="page-02" class='lo-popup__container popup-bottom'>-->
+        <!--<div class="lo-popup__overlay"></div>-->
+        <!--<div class="lo-popup__modal">-->
+            <!--<div class="modal-content">-->
+                <!--<div class="lo-grids">-->
+                    <!--<a href="javascript:;" class="close-popup">是</a>-->
+                    <!--<a href="javascript:;" class="close-popup">否</a>-->
+                    <!--<a href="javascript:;" class="close-popup">取消</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Js -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!--<script src="js/zepto.min.js"></script>-->
+<script src="js/lego-0.1.0.js"></script>
+
+
+<!-- Initialize Swiper -->
+<script language="javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        noSwiping: true,
+        noSwipingClass: 'stop-swiping',
+        navigation: {
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+        },
+    })
+
+    // popup
+    $(document).on("open", ".lo-popup-modal", function() {
+        console.log("open popup");
+    }).on("close", ".lo-popup-modal", function() {
+        console.log("close popup");
+    });
+
+
+    // $('.swiper-slide>ul>li').each(function (i, n) {
+    //     if (i != 0) {
+    //         $(this).addClass('lo-hr16')
+    //     }
+    // });
+
+
+
+
+</script>
+</body>
+</html>
