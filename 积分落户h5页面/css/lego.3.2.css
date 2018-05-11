@@ -943,62 +943,6 @@ textarea {
     animation: b .25s forwards;
 }
 
-
-/**/
-/**/
-/**/
-
-/* blue */
-/*.icheckbox_square-blue,*/
-/*.iradio_square-blue {*/
-    /*display: inline-block;*/
-    /**display: inline;*/
-    /*vertical-align: middle;*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*width: 22px;*/
-    /*height: 22px;*/
-/*!*    background: url(blue.png) no-repeat;*!*/
-    /*background: url(../icon/blue.png) no-repeat;*/
-    /*border: none;*/
-    /*cursor: pointer;*/
-/*}*/
-
-/*.icheckbox_square-blue {background-position: 0 0;}*/
-/*.icheckbox_square-blue.hover {background-position: -24px 0;}*/
-/*.icheckbox_square-blue.checked {background-position: -48px 0;}*/
-/*.icheckbox_square-blue.disabled {*/
-    /*background-position: -72px 0;*/
-    /*cursor: default;*/
-/*}*/
-/*.icheckbox_square-blue.checked.disabled {background-position: -96px 0;}*/
-/*.iradio_square-blue {background-position: -120px 0;}*/
-/*.iradio_square-blue.hover {background-position: -144px 0;}*/
-/*.iradio_square-blue.checked {background-position: -168px 0;}*/
-/*.iradio_square-blue.disabled {*/
-    /*background-position: -192px 0;*/
-    /*cursor: default;*/
-/*}*/
-/*.iradio_square-blue.checked.disabled {background-position: -216px 0;}*/
-
-/* HiDPI support */
-/*@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {*/
-/*.icheckbox_square-blue,.iradio_square-blue {*/
-    /*background-image: url(../icon/blue@2x.png);*/
-    /*-webkit-background-size: 240px 24px;*/
-    /*background-size: 240px 24px;*/
-    /*}*/
-/*}*/
-/**/
-/**/
-/**/
-/**/
-/*
-.demo-title {padding: 2rem 2rem 0 2rem;}
-.demo-title-en {font-size: 1rem;}
-.demo-title-cn {font-size: .7rem;}
-*/
-
 /*popup*/
 .lo-grids {height: 40%;}
 .lo-popup__overlay,
@@ -1100,35 +1044,6 @@ textarea {
     line-height: 1.6;
 }
 
-/*商城*/
-/*
-.lo-sc, .lo-sc-b2 {
-    display: -webkit-box;     
-    display: -webkit-flex;     
-    display: -ms-flexbox;     
-    display: flex;
-}
-.lo-sc img {width: 100%;height: auto;}
-.lo-sc-a {
-    -webkit-box-flex: 4;     
-    -webkit-flex: 4;    
-    -ms-flex: 4;   
-    flex: 4;
-}
-.lo-sc-b {
-    -webkit-box-flex: 6;     
-    -webkit-flex: 6;    
-    -ms-flex: 6;   
-    flex: 6;
-}
-.lo-sc-b2 a {    
-    -webkit-box-flex: 1;     
-    -webkit-flex: 1;    
-    -ms-flex: 1;    
-    flex: 1;
-}
-*/
-
 /*红点*/
 .lo-dot {
     width: .5rem;
@@ -1216,28 +1131,45 @@ input[type="checkbox"]+label,
 input[type="radio"]+label {
   width: 100%;
         }
-.lo-radio-r label::after,
-.lo-radio-l label::before {
-  content: "";
-  display: inline-block;
-  width: 1.2rem;
-  height: 1.2rem;
-  border: 1px #999 solid;
-  vertical-align: middle;
-  -webkit-border-radius: 50%;
-/*  margin-right: .6rem;*/
-  -webkit-box-sizing:border-box;
-}
+/*.lo-radio-r label::after,*/
+/*.lo-radio-l label::before {*/
+  /*content: "";*/
+  /*display: inline-block;*/
+  /*width: 1.2rem;*/
+  /*height: 1.2rem;*/
+  /*border: 1px #999 solid;*/
+  /*vertical-align: middle;*/
+  /*-webkit-border-radius: 50%;*/
+  /*-webkit-box-sizing:border-box;*/
+/*}*/
+/*input[type="checkbox"],input[type="radio"]{display: none;}*/
+/*input[type="checkbox"]:checked+label::after,*/
+/*input[type="checkbox"]:checked+label::before,*/
+/*input[type="radio"]:checked+label::after,*/
+/*input[type="radio"]:checked+label::before{*/
+  /*background-image: url(../icon/icon-mark.png);*/
+  /*background-size: 100%;*/
+  /*background-color: #008DEE;*/
+  /*border: 1px #008DEE solid;*/
+/*}*/
+
 input[type="checkbox"],input[type="radio"]{display: none;}
-input[type="checkbox"]:checked+label::after,
-input[type="checkbox"]:checked+label::before,
-input[type="radio"]:checked+label::after,
-input[type="radio"]:checked+label::before{
-  background-image: url(../icon/icon-mark.png);
-  background-size: 100%;
-  background-color: #008DEE;
-  border: 1px #008DEE solid;
-} 
+input[type="checkbox"]:checked+label ,
+input[type="checkbox"]:checked+label ,
+input[type="radio"]:checked+label ,
+input[type="radio"]:checked+label {
+    border: 1px #008DEE solid;
+    color:#008DEE
+}
+
+
+
+
+
+
+
+
+
 
 /*picker-时间选择*/
 .lo-picker{
@@ -1261,6 +1193,7 @@ input[type="radio"]:checked+label::before{
   position:relative;
   text-align:center;
   font-size:17px;
+  display: flex;
 }
 .lo-picker__hd:after{
   content:" ";
