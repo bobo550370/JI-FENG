@@ -53,7 +53,7 @@
 
         .swiper-button-prev, .swiper-container-rtl .swiper-button-next {left: 0;}
         .swiper-button-next, .swiper-container-rtl .swiper-button-prev {right: 0;}
-        .popup-bottom .lo-popup__modal, .swiper-container {height: auto;}
+        /*.popup-bottom .lo-popup__modal, .swiper-container {height: auto;}*/
     </style>
     <style>
 
@@ -63,48 +63,38 @@
 <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
-
-
-        <!--  1. 积分落户资格条件  -->
+          <!--1. 积分落户资格条件  -->
         <div class="swiper-slide stop-swiping">
-
-
             <div class="lo-fxcs lo-g lo-h72 lo-f20">积分落户资格条件</div>
             <div class="lo-g lo-f14">
-                <!---->
                 <a href="javascript:;" class="lo-fxcs lo-h72 lo-g lo-b5 lo-br8 open-popup" data-target="#page-01">
                         <div class="lo-fx8">持有本市居住证</div>
                         <div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>
                 </a>
                 <div class="lo-h12"></div>
 
-                <!---->
                 <a href="javascript:;" class="lo-fxcs lo-h72 lo-g lo-b5 lo-br8 open-popup" data-target="#page-01">
                     <div class="lo-fx8">不超过法定退休年龄</div>
                     <div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>
                 </a>
                 <div class="lo-h12"></div>
 
-                <!---->
                 <a href="javascript:;" class="lo-fxcs lo-h72 lo-g lo-b5 lo-br8 open-popup" data-target="#page-01">
                     <div class="lo-fx8">在京连续缴纳社会保险7年及以上</div>
                     <div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>
                 </a>
                 <div class="lo-h12"></div>
 
-                <!---->
                 <a href="javascript:;" class="lo-fxcs lo-h72 lo-g lo-b5 lo-br8 open-popup" data-target="#page-01">
                     <div class="lo-fx8">无刑事犯罪记录</div>
                     <div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>
                 </a>
-
             </div>
         </div>
 
 
         <!--  2. 合法稳定就业（1/9）  -->
         <div class="swiper-slide stop-swiping">
-
             <div class="lo-fxcs lo-g lo-h72 lo-f20">合法稳定就业（1/9）</div>
             <div class="lo-g">
                 <div>
@@ -175,18 +165,17 @@
         <div class="swiper-slide stop-swiping">
 
             <div class="lo-fxcs lo-g lo-h72 lo-f20">职住区域（4/9）</div>
-            <div class="lo-radio-l lo-list lo-g">
-
-                <a>
+            <ul class="lo-radio-l lo-list lo-g">
+                <li><a>
                     <input type="radio" value="zzqy" name="zzqy" id="zzqy01">
                     <label class="lo-fxcs lo-h72 lo-g lo-br8 lo-b5" for="zzqy01">
                         <span class="lo-fxcs lo-fx1">
                             <span>不满足相关职住区域积分条件</span>
                         </span>
                     </label>
-                </a>
-                <div class="lo-h12"></div>
-                <a href="javascript:;" class="page-nf">
+                </a></li>
+                <li class="lo-h12"></li>
+                <li><a href="javascript:;" class="page-nf">
                     <input type="radio" value="zzqy" name="zzqy" id="zzqy02">
                     <label class="lo-fxcs lo-h72 lo-g lo-br8 lo-b5" for="zzqy02">
                         <span class="lo-fxcs lo-fx1">
@@ -194,9 +183,9 @@
                             <div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>
                         </span>
                     </label>
-                </a>
-                <div class="lo-h12"></div>
-                <a href="javascript:;" class="page-nf">
+                </a></li>
+                <li class="lo-h12"></li>
+                <li><a href="javascript:;" class="page-nf">
                     <input type="radio" value="zzqy" name="zzqy" id="zzqy03">
                     <label class="lo-fxcs lo-h72 lo-g lo-br8 lo-b5" for="zzqy03">
                         <span class="lo-fxcs lo-fx1">
@@ -204,8 +193,8 @@
                             <div class="lo-fx3 lo-c6 lo-fxrr">请选择</div>
                         </span>
                     </label>
-                </a>
-            </div>
+                </a></li>
+            </ul>
         </div>
 
 
@@ -217,7 +206,7 @@
                     <input type="radio" value="cxcy" name="cxcy" id="cxcy01">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="cxcy01">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">不满足创新创业积分条件</span>
+                            <span class="lo-g">不满足创新创业积分条件</span>
                         </span>
                     </label>
                 </li>
@@ -226,7 +215,7 @@
                     <input type="radio" value="cxcy" name="cxcy" id="cxcy02">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="cxcy02">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">在科技、文化领域获得国家级或本市市级奖项</span>
+                            <span class="lo-g">在科技、文化领域获得国家级或本市市级奖项</span>
                         </span>
                     </label>
                 </li>
@@ -235,7 +224,7 @@
                     <input type="radio" value="cxcy" name="cxcy" id="cxcy03">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="cxcy03">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">在创新创业大赛获得国家级或本市市级奖项</span>
+                            <span class="lo-g">在创新创业大赛获得国家级或本市市级奖项</span>
                         </span>
                     </label>
                 </li>
@@ -244,7 +233,7 @@
                     <input type="radio" value="cxcy" name="cxcy" id="cxcy04">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="cxcy04">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">在国家高新技术企业担任高级管理人员、核心技术人员且符合相关条件</span>
+                            <span class="lo-g">在国家高新技术企业担任高级管理人员、核心技术人员且符合相关条件</span>
                         </span>
                     </label>
                 </li>
@@ -253,7 +242,7 @@
                     <input type="radio" value="cxcy" name="cxcy" id="cxcy05">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="cxcy05">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">在经认定的科技企业孵化器及众创空间中符合一定条件的创业企业投资或就业且符合相关条件</span>
+                            <span class="lo-g">在经认定的科技企业孵化器及众创空间中符合一定条件的创业企业投资或就业且符合相关条件</span>
                         </span>
                     </label>
                 </li>
@@ -262,7 +251,7 @@
                     <input type="radio" value="cxcy" name="cxcy" id="cxcy06">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="cxcy06">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">在经认定的科技企业孵化器及众创空间、技术转移服务机构、专业科技服务机构投资或就业且符合相关条件</span>
+                            <span class="lo-g">在经认定的科技企业孵化器及众创空间、技术转移服务机构、专业科技服务机构投资或就业且符合相关条件</span>
                         </span>
                     </label>
                 </li>
@@ -280,7 +269,7 @@
                     <input type="radio" value="ns" name="ns" id="ns01">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="ns01">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">不满足相关纳税积分条件</span>
+                            <span class="lo-g">不满足相关纳税积分条件</span>
                         </span>
                     </label>
                 </li>
@@ -289,7 +278,7 @@
                     <input type="radio" value="ns" name="ns" id="ns02">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="ns02">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">平均每年个人所得税纳税额在10万元及以上</span>
+                            <span class="lo-g">平均每年个人所得税纳税额在10万元及以上</span>
                         </span>
                     </label>
                 </li>
@@ -298,7 +287,7 @@
                     <input type="radio" value="ns" name="ns" id="ns03">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="ns03">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">出资企业纳税额按其出资比例计算，平均每年纳税20万元及以上</span>
+                            <span class="lo-g">出资企业纳税额按其出资比例计算，平均每年纳税20万元及以上</span>
                         </span>
                     </label>
                 </li>
@@ -307,7 +296,7 @@
                     <input type="radio" value="ns" name="ns" id="ns04">
                     <label class="lo-fxcs lo-h72 lo-b5 lo-br8" for="ns04">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">自《北京市积分落户管理办法（试行）》施行之日起，涉税违法行为记录次数</span>
+                            <span class="lo-g">自《北京市积分落户管理办法（试行）》施行之日起，涉税违法行为记录次数</span>
                         </span>
                     </label>
                 </li>
@@ -316,21 +305,18 @@
                     <span>自《北京市积分落户管理办法（试行）》施行之日起，涉税违法行为记录次数</span>
                 </li>
             </ul>
-
-
         </div>
 
 
         <!--  8. 年龄-->
         <div class="swiper-slide stop-swiping">
-
             <div class="lo-fxcs lo-g lo-h72 lo-f20">年龄（7/9）</div>
             <ul class="lo-radio-l lo-list lo-g">
                 <li>
                     <input type="radio" value="nl" name="nl" id="nl01">
                     <label class="lo-fxcs lo-h52 lo-b5 lo-br8" for="nl01">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">45周岁及以下</span>
+                            <span class="lo-g">45周岁及以下</span>
                         </span>
                     </label>
                 </li>
@@ -339,7 +325,7 @@
                     <input type="radio" value="nl" name="nl" id="nl02">
                     <label class="lo-fxcs lo-h52 lo-b5 lo-br8" for="nl02">
                         <span class="lo-fxai lo-fx1">
-                            <span class="lo-gr">45周岁以上</span>
+                            <span class="lo-g">45周岁以上</span>
                         </span>
                     </label>
                 </li>
@@ -395,20 +381,19 @@
         <div class="swiper-slide stop-swiping">
             <div class="lo-fxcs lo-g lo-h72 lo-f20">守法记录（9/9）</div>
             <div>行政拘留处罚次数</div>
-            <div></div>
+            <!--<div></div>-->
         </div>
 
 
         <!--  11. 模拟积分结果-->
         <div class="swiper-slide stop-swiping">
             <div>总分合计：<span></span>分</div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
+            <!--<ul>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+            <!--</ul>-->
         </div>
 
     </div>
