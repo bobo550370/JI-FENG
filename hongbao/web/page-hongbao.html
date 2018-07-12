@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="bobo">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--    <link rel="stylesheet" href="../css/legoui.css">-->
+    <link rel="stylesheet" href="../css/lego.3.3.css">
+    <style>
+        body {background-color: #f5f5f5;}
+        .js_dialog {position: fixed;width: 100%;height: 100%;top: 0;left: 0;}
+        .dialogs {width: 80%;height: 100%;z-index: 1000;}
+        .dialogs img {width: 100%;}
+        .lo-dialog-btn img {width: auto;}
+        .dialogs-card {width: 100%;height: 42%;overflow-x: hidden;overflow-y: auto; border-radius: 4px 4px 0 0;}
+        .dialogs-card li {margin: 0 0 .4rem 0;}
+        .dialogs-center {
+            background: url("images/img-hb.png") no-repeat;
+            background-size: 100%;
+            background-position: bottom;
+            height: 70%;
+        }
+
+    </style>
+</head>
+<body>
+
+<header></header>
+
+<!--  content  -->
+<div class="content">
+    <a href="javascript:;" class="lo-fx1 lo-fxcc lo-b1 lo-c5" id="showIOSDialog2">显示图片</a>
+
+
+</div>
+
+<footer></footer>
+
+<!--  dialog img -->
+<div id="dialogs-img">
+    <div class="js_dialog lo-fxcc" id="iosDialog2" style="display: none;">
+        <div class="lo-mask"></div>
+        <div class="dialogs lo-fxcl">
+
+            <!-- content -->
+            <div class="dialogs-center lo-fxrr lo-g">
+                <div class="dialogs-card lo-fxcl">
+                    <ul>
+
+                        <!-- card 01 -->
+                        <li class="lo-h72 lo-br4 lo-fxrw">
+                            <!-- 优惠券svg锯齿 -->
+                            <svg width="3px" height="80px" viewBox="0 0 3 80" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group-4-Copy-3" fill="#FFFFFF"><path d="M0,77 L0,75 C1.65685425,75 3,73.6568542 3,72 C3,70.3431458 1.65685425,69 0,69 L0,67 C1.65685425,67 3,65.6568542 3,64 C3,62.3431458 1.65685425,61 0,61 L0,59 C1.65685425,59 3,57.6568542 3,56 C3,54.3431458 1.65685425,53 0,53 L0,51 C1.65685425,51 3,49.6568542 3,48 C3,46.3431458 1.65685425,45 0,45 L0,43 C1.65685425,43 3,41.6568542 3,40 C3,38.3431458 1.65685425,37 0,37 L0,35 C1.65685425,35 3,33.6568542 3,32 C3,30.3431458 1.65685425,29 0,29 L0,27 C1.65685425,27 3,25.6568542 3,24 C3,22.3431458 1.65685425,21 0,21 L0,19 C1.65685425,19 3,17.6568542 3,16 C3,14.3431458 1.65685425,13 0,13 L0,11 C1.65685425,11 3,9.65685425 3,8 C3,6.34314575 1.65685425,5 0,5 L0,3 C1.65685425,3 3,1.65685425 3,0 L3,80 C3,78.3431458 1.65685425,77 0,77 Z" id="Combined-Shape"></path></g></g></svg>
+                            <!-- 优惠券金额 -->
+                            <div class="lo-fx3 lo-b5 lo-fxcc lo-f30 lo-c7">
+                                <div><span class="lo-f14">￥</span>100</div>
+                            </div>
+                            <!-- 优惠券svg锯齿 -->
+                            <div class="lo-fxcl lo-fxcs lo-b5">
+                                <svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M4,4 C6.209139,4 8,2.209139 8,0 C8,0 0,0 0,0 C0,2.209139 1.790861,4 4,4 Z" id="Oval-4" fill="#FB3950"></path></g></svg>
+                                <svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M8,4 C8,1.790861 6.209139,0 4,0 C1.790861,0 0,1.790861 0,4 C0,4 8,4 8,4 Z" id="Oval-6" fill="#FB3950"></path></g></svg>
+                            </div>
+                            <!-- 优惠券内容 -->
+                            <div class="lo-fx6 lo-b5"></div>
+                        </li>
+
+                        <!-- card 02 -->
+                        <li class="lo-h72 lo-br4 lo-fxrw">
+                            <!-- 优惠券svg锯齿 -->
+                            <svg width="3px" height="80px" viewBox="0 0 3 80" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group-4-Copy-3" fill="#FFFFFF"><path d="M0,77 L0,75 C1.65685425,75 3,73.6568542 3,72 C3,70.3431458 1.65685425,69 0,69 L0,67 C1.65685425,67 3,65.6568542 3,64 C3,62.3431458 1.65685425,61 0,61 L0,59 C1.65685425,59 3,57.6568542 3,56 C3,54.3431458 1.65685425,53 0,53 L0,51 C1.65685425,51 3,49.6568542 3,48 C3,46.3431458 1.65685425,45 0,45 L0,43 C1.65685425,43 3,41.6568542 3,40 C3,38.3431458 1.65685425,37 0,37 L0,35 C1.65685425,35 3,33.6568542 3,32 C3,30.3431458 1.65685425,29 0,29 L0,27 C1.65685425,27 3,25.6568542 3,24 C3,22.3431458 1.65685425,21 0,21 L0,19 C1.65685425,19 3,17.6568542 3,16 C3,14.3431458 1.65685425,13 0,13 L0,11 C1.65685425,11 3,9.65685425 3,8 C3,6.34314575 1.65685425,5 0,5 L0,3 C1.65685425,3 3,1.65685425 3,0 L3,80 C3,78.3431458 1.65685425,77 0,77 Z" id="Combined-Shape"></path></g></g></svg>
+                            <!-- 优惠券金额 -->
+                            <div class="lo-fx3 lo-b5 lo-fxcc lo-f30 lo-c7">
+                                <div><span class="lo-f14">￥</span>100</div>
+                            </div>
+                            <!-- 优惠券svg锯齿 -->
+                            <div class="lo-fxcl lo-fxcs lo-b5">
+                                <svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M4,4 C6.209139,4 8,2.209139 8,0 C8,0 0,0 0,0 C0,2.209139 1.790861,4 4,4 Z" id="Oval-4" fill="#FB3950"></path></g></svg>
+                                <svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M8,4 C8,1.790861 6.209139,0 4,0 C1.790861,0 0,1.790861 0,4 C0,4 8,4 8,4 Z" id="Oval-6" fill="#FB3950"></path></g></svg>
+                            </div>
+                            <!-- 优惠券内容 -->
+                            <div class="lo-fx6 lo-b5"></div>
+                        </li>
+
+                        <!-- card 03 -->
+                        <li class="lo-h72 lo-br4 lo-fxrw">
+                            <!-- 优惠券svg锯齿 -->
+                            <svg width="3px" height="80px" viewBox="0 0 3 80" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group-4-Copy-3" fill="#FFFFFF"><path d="M0,77 L0,75 C1.65685425,75 3,73.6568542 3,72 C3,70.3431458 1.65685425,69 0,69 L0,67 C1.65685425,67 3,65.6568542 3,64 C3,62.3431458 1.65685425,61 0,61 L0,59 C1.65685425,59 3,57.6568542 3,56 C3,54.3431458 1.65685425,53 0,53 L0,51 C1.65685425,51 3,49.6568542 3,48 C3,46.3431458 1.65685425,45 0,45 L0,43 C1.65685425,43 3,41.6568542 3,40 C3,38.3431458 1.65685425,37 0,37 L0,35 C1.65685425,35 3,33.6568542 3,32 C3,30.3431458 1.65685425,29 0,29 L0,27 C1.65685425,27 3,25.6568542 3,24 C3,22.3431458 1.65685425,21 0,21 L0,19 C1.65685425,19 3,17.6568542 3,16 C3,14.3431458 1.65685425,13 0,13 L0,11 C1.65685425,11 3,9.65685425 3,8 C3,6.34314575 1.65685425,5 0,5 L0,3 C1.65685425,3 3,1.65685425 3,0 L3,80 C3,78.3431458 1.65685425,77 0,77 Z" id="Combined-Shape"></path></g></g></svg>
+                            <!-- 优惠券金额 -->
+                            <div class="lo-fx3 lo-b5 lo-fxcc lo-f30 lo-c7">
+                                <div><span class="lo-f14">￥</span>100</div>
+                            </div>
+                            <!-- 优惠券svg锯齿 -->
+                            <div class="lo-fxcl lo-fxcs lo-b5">
+                                <svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M4,4 C6.209139,4 8,2.209139 8,0 C8,0 0,0 0,0 C0,2.209139 1.790861,4 4,4 Z" id="Oval-4" fill="#FB3950"></path></g></svg>
+                                <svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M8,4 C8,1.790861 6.209139,0 4,0 C1.790861,0 0,1.790861 0,4 C0,4 8,4 8,4 Z" id="Oval-6" fill="#FB3950"></path></g></svg>
+                            </div>
+                            <!-- 优惠券内容 -->
+                            <div class="lo-fx6 lo-b5"></div>
+                        </li>
+
+                        <li class="lo-h32"></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- btn -->
+            <a><img src="images/img-hb-btn.png"></a>
+
+            <!-- close -->
+            <div class="lo-dialog__ft">
+                <a href="javascript:;" class="lo-dialog-btn lo-fxcc">
+                    <img class="lo-h52" src="images/icon-close.png">
+                </a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/icheck.min.js"></script>
+<script src="../js/lego-0.1.0.js"></script>
+<script>
+    //Dialog-img
+    $(function() {
+        var $iosDialog2 = $('#iosDialog2');
+        $('#dialogs-img').on('click', '.lo-dialog-btn', function() {
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+        $('#showIOSDialog2').on('click', function() {
+            $iosDialog2.fadeIn(200);
+        });
+    });
+</script>
+</body>
+</html>
