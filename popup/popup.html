@@ -151,7 +151,8 @@
 
 
 <script src="http://jqweui.com/dist/lib/jquery-2.1.4.js"></script>
-<!--<script src="js/zepto.min.js"></script>-->
+<script src="http://jqweui.com/dist/lib/fastclick.js"></script>    
+<!-- <script src="js/zepto.min.js"></script> -->
 <script src="js/lego-0.1.0.js"></script>
 <script>
     $(function() {
@@ -159,11 +160,10 @@
     });
 </script>
 <script>
-    popup
     $(document).on("open", ".lo-popup-modal", function() {
         console.log("open popup");
     }).on("close", ".lo-popup-modal", function() {
-        console.log("close popup");
+        console.log("close popup");        
     });
 </script>
 </body>
