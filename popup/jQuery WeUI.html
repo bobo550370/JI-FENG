@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://jqlo.com/dist/demos/popup.html -->
+<html class="pixel-ratio-2 retina ios ios-11 ios-11-0 ios-gt-10 ios-gt-9 ios-gt-8 ios-gt-7 ios-gt-6"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>jQuery lo</title>
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+<!--<link rel="stylesheet" href="./jQuery lo_files/lo.min.css">-->
+<!--<link rel="stylesheet" href="./jQuery lo_files/jquery-lo.css">-->
+<!--<link rel="stylesheet" href="./jQuery lo_files/demos.css">-->
+<link rel="stylesheet" href="css/lego.3.3.css">
+
+
+
+
+    <style>
+
+
+        /* popup */
+        .lo-popup__container {display: none;}
+        .lo-popup__container.lo-popup__container--visible {display: block;}
+        .lo-popup__container .lo-cells {margin: 0;text-align: left;}
+        .lo-popup__container--visible .lo-popup-overlay {opacity: 1;}
+        .lo-popup__container--visible .lo-popup__modal {opacity: 1;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+
+        /* 弹出层 */
+        .lo-popup__modal {
+            width: 100%;
+            position: absolute;
+            z-index: 100;
+            bottom: 0;
+            border-radius: 0;
+            opacity: 0.6;
+            color: #3d4145;
+            -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+            height: 100%;
+            background: #F5F5F5;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: transform, opacity;
+            transition-property: transform, opacity, -webkit-transform;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        /* 弹出层定位 */
+        .popup-bottom .lo-popup__modal {height: auto;}
+        .lo-popup__modal .toolbar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .lo-popup__modal .modal-content {
+            height: 100%;
+            padding-top: 2.2rem;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+
+        /*遮罩*/
+        .lo-popup__overlay, .lo-popup__container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+        .lo-popup__overlay {
+            background-color: #000;
+            opacity: .3;
+            -webkit-transition: opacity .3s;
+            transition: opacity .3s;
+        }
+
+
+
+
+
+
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </head>
+
+  <body ontouchstart="">
+
+
+
+
+    <a href="javascript:;" class="lo-btn lo-btn_primary open-popup" data-target="#half">显示底部的Popup</a>
+
+
+
+    <div id="half" class="lo-popup__container popup-bottom">
+
+
+      <div class="lo-popup__overlay"></div>
+
+
+      <div class="lo-popup__modal">
+
+          <a href="javascript:;" class="picker-button close-popup">关闭</a>
+
+          <!-- 内容 -->
+          <div class="modal-content">
+              <div>222</div>
+          </div>
+      </div>
+    </div>
+
+
+
+<script src="js/zepto.min.js"></script>
+<script src="js/lego-0.1.0.js"></script>
+    <!--<script src="./jQuery lo_files/jquery-2.1.4.js"></script>-->
+<!--<script src="./jQuery lo_files/fastclick.js"></script>-->
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="./jQuery lo_files/jquery-lo.js"></script>
+
+    <script>
+      $(document).on("open", ".lo-popup-modal", function() {
+        console.log("open popup");
+      }).on("close", ".lo-popup-modal", function() {
+        console.log("close popup");
+      });
+    </script>
+  
+
+</body></html>
