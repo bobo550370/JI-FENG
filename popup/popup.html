@@ -155,12 +155,19 @@
 <script src="js/lego-0.1.0.js"></script>
 
 <script>
-    // popup
-    // $(document).on("open", ".lo-popup-modal", function() {
-    //     console.log("open popup");
-    // }).on("close", ".lo-popup-modal", function() {
-    //     console.log("close popup");
-    // });
+      $(function() {
+    FastClick.attach(document.body);
+  });
+</script>    
+    
+    
+<script>
+    popup
+    $(document).on("open", ".lo-popup-modal", function() {
+        console.log("open popup");
+    }).on("close", ".lo-popup-modal", function() {
+        console.log("close popup");
+    });
 </script>
 </body>
 </html>
