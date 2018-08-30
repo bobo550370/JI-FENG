@@ -81,8 +81,8 @@
 </head>
 <body>
 
-<a class="open-popup" data-target="#half">显示底部的Popup</a>
-<a class="open-popup" data-target="#123">显示底部的Popup</a>
+<a href="javascript:;" class="lo-fxcc lo-h44 lo-b1 lo-c5 open-popup" data-target="#half">显示底部的Popup</a>
+<a href="javascript:;" class="lo-fxcc lo-h44 lo-b3 lo-c5 open-popup" data-target="#123">显示底部的Popup</a>
 
 
 <!--  显示底部的Popup  -->
@@ -150,17 +150,21 @@
 
 
 
-
-<script src="js/zepto.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!--<script src="js/zepto.min.js"></script>-->
 <script src="js/lego-0.1.0.js"></script>
-
 <script>
-    // popup
-    // $(document).on("open", ".lo-popup-modal", function() {
-    //     console.log("open popup");
-    // }).on("close", ".lo-popup-modal", function() {
-    //     console.log("close popup");
-    // });
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script>
+    popup
+    $(document).on("open", ".lo-popup-modal", function() {
+        console.log("open popup");
+    }).on("close", ".lo-popup-modal", function() {
+        console.log("close popup");
+    });
 </script>
 </body>
 </html>
