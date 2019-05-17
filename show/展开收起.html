@@ -35,13 +35,33 @@
         .accordion .item svg{float: right; height: 2.6rem;margin: 0 .8rem 0 0;}
         .accordion .item h3{display:inline-block;vertical-align:middle;height:100%;padding-left:.7rem;font-family:jf flat regular;font-size:.7rem;font-weight:400}
         .accordion .item h3:before{content:"";display:inline-block;vertical-align:middle;height:100%}
-        .accordion .item {background:#fff;color:#333;box-shadow: .8rem -.5px 0 0 #e6e6e6;}
+        .accordion .item {background:#fff;color:#333;}
         .accordion p{font-family:jf flat regular;font-size:.7rem;font-weight:400;padding:.8rem .8rem 1.6rem .8rem;display:none;background-color: #f5f5f5;color: #333;line-height: 1.1rem;text-indent: 24px;}
         .accordion p > a{ color: #008DEE }
         section .btn {display: block; padding:.8rem;}
         section .btn a {height: 2.2rem;background-color: #008DEE;color: #ffffff;border-radius: 4px;display: block;text-align: center;line-height: 2.2rem;font-size: .75rem;}
         section .btn a:active {opacity: .8;}
         a{text-decoration:none}
+
+        .accordion .item:before {
+            content: " ";
+            position: absolute;
+            height: 1px;
+            color: #e5e5e5;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+        .accordion .item:before {
+            top: 0;
+            left: .8rem;
+            right: 0;
+            border-top: 1px solid #e5e5e5;
+        }
+
+
+
     </style>
 
 
