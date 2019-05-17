@@ -186,5 +186,13 @@
     }(jQuery));
 </script>
 
+<!--移动端 - iOS web页面 :active 的兼容性-->
+<scripy>
+    var a = document.getElementsByTagName('a');
+    for (var i = 0; i < a.length; i++) {
+    a[i].addEventListener('touchstart', function() {}, false);
+    }
+    </script>
+
 </body>
 </html>
