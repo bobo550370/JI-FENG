@@ -12,10 +12,8 @@
 	img{max-width: 100%; height: auto;}
 	.test{height: 600px; max-width: 600px; font-size: 40px;}
 	</style>
-<div class="test">
-版本一：纯js效果演示，微信打开提示，其它浏览器打开不提示！<br/>
-<a href="http://dwtedx.com">DD博客</a>
-	</div>
+	<div class="test"><a href="http://mp.weixin.qq.com/mp/redirect?url=http://mobile.xinlianwang.com/android/distributor/DistributorApp.apk#weixin.qq.com#wechat_redirect ">有效跳转</a></div>
+	<script type="text/javascript" src="http://libs.useso.com/js/jquery/1.9.0/jquery.min.js"></script>
 	<script type="text/javascript">
 		function is_weixin() {
 		    var ua = navigator.userAgent.toLowerCase();
@@ -27,30 +25,27 @@
 		}
 		var isWeixin = is_weixin();
 		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
-		function loadHtml(){
-			var div = document.createElement('div');
-			div.id = 'weixin-tip';
-			div.innerHTML = '<p><img src="live_weixin.png" alt="微信打开"/></p>';
-			document.body.appendChild(div);
-		}
+		var weixinTip = $('<div id="weixinTip"><p><img src="live_weixin.png" alt="微信打开"/></p></div>');
 		
-		function loadStyleText(cssText) {
-	        var style = document.createElement('style');
-	        style.rel = 'stylesheet';
-	        style.type = 'text/css';
-	        try {
-	            style.appendChild(document.createTextNode(cssText));
-	        } catch (e) {
-	            style.styleSheet.cssText = cssText; //ie9以下
-	        }
-            var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
-            head.appendChild(style); 
-	    }
-	    var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
 		if(isWeixin){
-			loadHtml();
-			loadStyleText(cssText);
+			$("body").append(weixinTip);
 		}
+		$("#weixinTip").css({
+			"position":"fixed",
+			"left":"0",
+			"top":"0",
+			"height":winHeight,
+			"width":"100%",
+			"z-index":"1000",
+			"background-color":"rgba(0,0,0,0.8)",
+			"filter":"alpha(opacity=80)",
+		});
+		$("#weixinTip p").css({
+			"text-align":"center",
+			"margin-top":"10%",
+			"padding-left":"5%",
+			"padding-right":"5%"
+		});
 	</script>
 </body>
 </html>
