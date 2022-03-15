@@ -23,29 +23,29 @@
         width: 100%;
         font-size: 0;
         display: flex;
+        position: absolute;
+        z-index: -100;
+        overflow: hidden;
         margin-top: 4px;
         flex-direction: column;
-        animation:pulse 100s infinite;
         animation-timing-function:linear;
 /*       filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25)); */
       }
-      .element img{width: 120px; margin: 4px;border-radius: 6px;background-color: #e6e6e6;}
-      .img-01,.img-02,.img-03{display: flex;width: 2000px;position: relative;}
+      .element img{width: 120px;height: 76px; margin: 4px;border-radius: 6px;background-color: #e6e6e6;}
+      .img-01,.img-02,.img-03{display: flex;width: 2000px;position: relative;animation:pulse 100s infinite;}
       .img-01 {left: -40px;}
       .img-02 {left: -80px;}
       .img-03 {}
       
       .color-lin{
         position: absolute;
-        top: 3rem;
+        top: 60px;
         width: 100%;
-        height: 200px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 27.79%, #ffffff 88.58%);
       }
-      
+      .color-lin img {width: 100%;height: 200px;}
       .bmac {
         top: 10.25rem;
-        z-index: 1;
+        z-index: 100;
         width: 100%;
         display: flex;
         position: absolute;
@@ -54,7 +54,7 @@
       }
       .bmac-logo {width: 3.2rem;border-radius: .6rem;border: 2px solid #FFFFFF;}
       
-      .download {display: flex;justify-content: center;position: absolute;bottom: 5rem;width: 100%;}
+      .download {display: flex;justify-content: center;position: absolute;bottom: 5rem;width: 100%;z-index: 101;}
       .download a{
         width: 6rem;
         height: 2.2rem;
@@ -69,6 +69,10 @@
       }
       .download a:active{
         background-color: #0080d9;
+        box-shadow: 0px 8px 16px rgba(0, 141, 238, 0.2);
+      }
+      .download a:hover{
+        background-color: #000000;
         box-shadow: 0px 8px 16px rgba(0, 141, 238, 0.2);
       }
       
@@ -92,6 +96,9 @@
     
     <div class="download">
       <a href="https://apps.apple.com/cn/app/北京一卡通/id1071038870">立即下载</a>
+    </div>
+    <div class="color-lin">
+      <img src="img-gradient.png" />
     </div>
     
     <div class="element">
@@ -171,7 +178,7 @@
         </div>
     </div>  
     
-    <div class="color-lin"></div>
+
     
   </body>
 </html>
