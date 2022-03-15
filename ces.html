@@ -1,49 +1,56 @@
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-</head>
-<style>
- *{margin:0; padding:0;}
- a{text-decoration: none;}
- img{max-width: 100%; height: auto;}
-.footer-bg{background: #ff8345; color: #E4E4E4; padding: 3.4% 2%; text-align: center;}
-.footer-bg .entry-con{font-size: 0.8em;}
-#weixin-tip{display:none; position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;}&nbsp;
-#weixin-tip p{text-align: center; margin-top: 4%; padding:0 5%; position: relative;}
-#weixin-tip .close{color: #fff;padding: 5px;font: bold 30px/30px simsun; text-shadow: 0 1px 0 #ddd;position: absolute;top: 0; left: 5%;}
-</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>微信弹出遮罩</title>
 </head>
 <body>
-	
-	<a href="下载地址" rel="nofollow"  class="download" id="J_weixin">下载【安卓软件】</a>
-	
+	<style type="text/css">
+	*{margin:0; padding:0;}
+	img{max-width: 100%; height: auto;}
+	.test{height: 600px; max-width: 600px; font-size: 40px;}
+	</style>
+<div class="test">
+版本一：纯js效果演示，微信打开提示，其它浏览器打开不提示！<br/>
+<a href="http://dwtedx.com">DD博客</a>
+	</div>
 	<script type="text/javascript">
-	  var is_weixin = (function() {
-	  var ua = navigator.userAgent.toLowerCase();
-	  if (ua.match(/MicroMessenger/i) == "micromessenger") {
-	  return true;
-	  } else {
-	  	return false;
-	  }
-	  })();
-	  window.onload = function(){
-	  var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
-	  var btn = document.getElementById('J_weixin');
-	  var tip = document.getElementById('weixin-tip');
-	  var close = document.getElementById('close');
-	  if(is_weixin){
-	  btn.onclick = function(e){
-	  tip.style.height = winHeight + 'px';
-	  tip.style.display = 'block';
-	  return false;
-	  }
-	  close.onclick = function(){
-	  tip.style.display = 'none';
-	  }
-	  }
-	  }
-
-</script>
+		function is_weixin() {
+		    var ua = navigator.userAgent.toLowerCase();
+		    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		var isWeixin = is_weixin();
+		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+		function loadHtml(){
+			var div = document.createElement('div');
+			div.id = 'weixin-tip';
+			div.innerHTML = '<p><img src="live_weixin.png" alt="微信打开"/></p>';
+			document.body.appendChild(div);
+		}
+		
+		function loadStyleText(cssText) {
+	        var style = document.createElement('style');
+	        style.rel = 'stylesheet';
+	        style.type = 'text/css';
+	        try {
+	            style.appendChild(document.createTextNode(cssText));
+	        } catch (e) {
+	            style.styleSheet.cssText = cssText; //ie9以下
+	        }
+            var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+            head.appendChild(style); 
+	    }
+	    var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+		if(isWeixin){
+			loadHtml();
+			loadStyleText(cssText);
+		}
+	</script>
 </body>
 </html>
